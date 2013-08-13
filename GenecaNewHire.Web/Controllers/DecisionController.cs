@@ -14,9 +14,11 @@ namespace GenecaNewHire.Web.Controllers
             {
                 case 1:
                     ViewBag.Badending = "Never, ever turn down an offer from Geneca.";
+                    ViewBag.Image = "../../Content/images/toobad.jpg";
                     break;
                 case 2:
                     ViewBag.Badending = "Illegal contact! 15 yard restraining order!";
+                    ViewBag.Image = "../../Content/images/referee.jpg";
                     break;
             }
 
@@ -91,16 +93,20 @@ namespace GenecaNewHire.Web.Controllers
             switch (id)
             {
                 case 1:
-                    ViewBag.Mistake = "You shouldn't have wore shorts! Idiot!";
+                    ViewBag.Mistake = "You shouldn't have wore shorts. Idiot!";
+                    ViewBag.Image = "../../Content/images/shorts.jpg";
                     break;
                 case 2:
-                    ViewBag.Mistake = "Your choice of resturant makes Mike Denton sick!";
+                    ViewBag.Mistake = "Your decision to have everyone try China Buffet makes Mike Denton sick!";
+                    ViewBag.Image = "../../Content/images/sick.jpg";
                     break;
                 case 3:
                     ViewBag.Mistake = "Weirdo, no one likes you!";
+                    ViewBag.Image = "../../Content/images/weird.jpg";
                     break;
                 case 4:
                     ViewBag.Mistake = "Really, that slogan stinks!";
+                    ViewBag.Image = "../../Content/images/badslogan.jpg";
                     break;
             }
 
@@ -142,11 +148,16 @@ namespace GenecaNewHire.Web.Controllers
                 return RedirectToAction("Apology", "Decision", new { id = 4 });
             }
 
-            return RedirectToAction("Riddle");
+            return RedirectToAction("Riddle", new { id = 0 });
         }
 
-        public ActionResult Riddle()
+        public ActionResult Riddle(int id)
         {
+            if (id == 1)
+            {
+                ViewBag.Error = "Almost there, keep trying!";
+            }
+
             Session["Visited"] = Session["Visited"] + " => " + "Riddle";
 
             return View();
@@ -159,7 +170,7 @@ namespace GenecaNewHire.Web.Controllers
                 return RedirectToAction("Congrats", "Home");
             }
 
-            return View("Riddle");
+            return View("Riddle", new { id = 1 });
         }
 
         public ActionResult Offer()

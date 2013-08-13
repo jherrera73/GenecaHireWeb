@@ -103,7 +103,13 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\images\badslogan.jpg" />
     <Content Include="Content\images\logo.png" />
+    <Content Include="Content\images\referee.jpg" />
+    <Content Include="Content\images\shorts.jpg" />
+    <Content Include="Content\images\Sick.jpg" />
+    <Content Include="Content\images\toobad.jpg" />
+    <Content Include="Content\images\weird.jpg" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />

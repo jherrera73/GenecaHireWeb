@@ -18,4 +18,3 @@ c:\users\john.herrera.geneca\documents\visual studio 2012\Projects\GenecaHireWeb
 c:\users\john.herrera.geneca\documents\visual studio 2012\Projects\GenecaHireWeb\GenecaNewHire.Web\bin\System.Web.WebPages.Razor.xml
 c:\users\john.herrera.geneca\documents\visual studio 2012\Projects\GenecaHireWeb\GenecaNewHire.Web\obj\Debug\GenecaNewHire.Web.dll
 c:\users\john.herrera.geneca\documents\visual studio 2012\Projects\GenecaHireWeb\GenecaNewHire.Web\obj\Debug\GenecaNewHire.Web.pdb
-C:\Users\John.Herrera.GENECA\documents\visual studio 2012\Projects\GenecaHireWeb\GenecaNewHire.Web\obj\Debug\GenecaNewHire.Web.csprojResolveAssemblyReference.cache

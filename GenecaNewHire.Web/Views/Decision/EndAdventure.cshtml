@@ -5,13 +5,17 @@
 
 <div>
     @ViewBag.Badending <br />
-    Too bad! Geneca was the place to work! Good Luck!
+    Too bad. Geneca was the place to work! Good Luck.....
+</div>
+
+<div class="mistake-image">
+    <img src="@ViewBag.Image" alt="mistake" />
 </div>
 
 @using (Html.BeginForm())
 {
     <p>
-        <input id="btnStartOver" type="submit" value="Start Over" />
+        <input class="rounded" id="btnStartOver" type="submit" value="Start Over" />
     </p>
 }
 

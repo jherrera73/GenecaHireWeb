@@ -6,6 +6,11 @@
 <div>
     Oh boy, @ViewBag.Mistake. <br /> Do you want to apologize?
 </div>
+
+<div class="mistake-image">
+    <img src="@ViewBag.Image" alt="mistake" />
+</div>
+
 @using (Html.BeginForm())
 {
     @Html.Partial("YesNo")
