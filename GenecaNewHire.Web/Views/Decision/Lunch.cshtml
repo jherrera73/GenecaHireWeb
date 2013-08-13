@@ -1,0 +1,13 @@
+﻿@{
+    ViewBag.Title = "Lunch";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div>
+    Now you have been asked to pick a resturant for your first day lunch, do....
+</div>
+
+@using (Html.BeginForm())
+{
+    @Html.Partial("ChooseList")
+}

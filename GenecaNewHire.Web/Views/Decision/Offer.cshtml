@@ -1,0 +1,13 @@
+﻿@{
+    ViewBag.Title = "Offer";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div>
+    You have interviewed for a job at Geneca and you have recevied an offer do you accept? 
+</div>
+
+@using (Html.BeginForm())
+{
+    @Html.Partial("YesNo")
+}

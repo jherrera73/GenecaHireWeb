@@ -1,0 +1,11 @@
+﻿<div style="padding-top: 15px;">
+        @Html.DropDownList("Choose", new List<SelectListItem>
+        {
+            new SelectListItem{ Text = "you pick ", Value = "0" },
+            new SelectListItem{ Text = "you let Allison pick", Value = "1" },
+            new SelectListItem{ Text = "you let Mike Denton pick", Value = "2" }
+        })
+    </div>
+    <p>
+        <input id="btnChoose" type="submit" value="Choose" />
+    </p>

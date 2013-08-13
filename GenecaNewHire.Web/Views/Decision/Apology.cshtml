@@ -1,0 +1,12 @@
+﻿@{
+    ViewBag.Title = "Apology";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div>
+    Oh boy, @ViewBag.Mistake. <br /> Do you want to apologize?
+</div>
+@using (Html.BeginForm())
+{
+    @Html.Partial("YesNo")
+}

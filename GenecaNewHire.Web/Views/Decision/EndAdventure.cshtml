@@ -1,0 +1,17 @@
+﻿@{
+    ViewBag.Title = "EndAdventure";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div>
+    @ViewBag.Badending <br />
+    Too bad! Geneca was the place to work! Good Luck!
+</div>
+
+@using (Html.BeginForm())
+{
+    <p>
+        <input id="btnStartOver" type="submit" value="Start Over" />
+    </p>
+}
+

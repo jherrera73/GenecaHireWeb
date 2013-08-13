@@ -1,0 +1,22 @@
+﻿@{
+    ViewBag.Title = "MeetGreet";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div>
+    Congrats, you have survived lunch! It's time to meet the rest of the Genecians with Allison! Upon each introduction, you should...
+</div>
+@using (Html.BeginForm())
+{
+    <div>
+        @Html.DropDownList("ChooseGreeting", new List<SelectListItem>
+        {
+            new SelectListItem{ Text = "hug that person", Value = "0" },
+            new SelectListItem{ Text = "act shy and hide behind allison", Value = "1" },
+            new SelectListItem{ Text = "shake hands and say hi", Value = "2" }
+        })
+    </div>
+    <p>
+        <input id="btnChoose" type="submit" value="Choose" />
+    </p>
+}

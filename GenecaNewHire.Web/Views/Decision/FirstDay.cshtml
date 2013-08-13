@@ -1,0 +1,21 @@
+﻿@{
+    ViewBag.Title = "FirstDay";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div>
+    It is your first day at Geneca. What are you going to wear to work?
+</div>
+@using (Html.BeginForm())
+{
+    <div style="padding-top: 15px;">
+        @Html.DropDownList("ChooseOutfit", new List<SelectListItem>
+        {
+            new SelectListItem{ Text = "Shorts and no shirt", Value = "0" },
+            new SelectListItem{ Text = "Nice jeans and polo shirt", Value = "1" },
+            new SelectListItem{ Text = "Dress slacks, shirt and tie", Value = "2" }
+        })
+    </div>
+    <p>
+        <input id="btnChoose" type="submit" value="Choose outfit" />
+    </p>
+}

@@ -1,0 +1,96 @@
+﻿body{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:14px;
+    background-color:azure;
+}
+
+header,
+footer,
+nav,
+section {
+    display: block;
+}
+
+/* Styles for basic forms
+-----------------------------------------------------------*/
+
+div.main {
+    margin: auto; 
+    width: 800px;
+}
+
+div.page-header {
+    text-align: center; 
+    margin-top: 20px; 
+    font-size: 20px; 
+    font-weight:bold;
+}
+
+div.wrapper {
+    text-align: center; 
+    padding: 15px; 
+    border: solid 1px blue; 
+    background-color: white;
+}
+
+div.title {
+    text-shadow: 1px 1px 0 black;
+}
+
+fieldset 
+{
+    border:1px solid #ddd;
+    padding:0 1.4em 1.4em 1.4em;
+    margin:0 0 1.5em 0;
+}
+
+legend 
+{
+    font-size:1.2em;
+    font-weight: bold;
+}
+
+textarea 
+{
+    min-height: 75px;
+}
+
+.editor-label 
+{
+    margin: 1em 0 0 0;
+}
+
+.editor-field 
+{
+    margin:0.5em 0 0 0;
+}
+
+
+/* Styles for validation helpers
+-----------------------------------------------------------*/
+.field-validation-error
+{
+    color: #ff0000;
+}
+
+.field-validation-valid
+{
+    display: none;
+}
+
+.input-validation-error
+{
+    border: 1px solid #ff0000;
+    background-color: #ffeeee;
+}
+
+.validation-summary-errors
+{
+    font-weight: bold;
+    color: #ff0000;
+}
+
+.validation-summary-valid
+{
+    display: none;
+}

@@ -1,0 +1,15 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div>
+    To start your adventure click the start button below
+</div>
+
+@using (Html.BeginForm())
+{
+    <p>
+        <input id="btnStart" type="submit" value="Start" />
+    </p>
+}
