@@ -108,6 +108,10 @@ namespace GenecaNewHire.Web.Controllers
                     ViewBag.Mistake = "Really, that slogan stinks!";
                     ViewBag.Image = "../../Content/images/badslogan.jpg";
                     break;
+                case 5:
+                    ViewBag.Mistake = "You didn't follow directions did you? Apologize to Mike Reyes!";
+                    ViewBag.Image = "../../Content/images/school.jpg";
+                    break;
             }
 
             Session["Visited"] = Session["Visited"] + " => " + "Apology";
@@ -128,6 +132,8 @@ namespace GenecaNewHire.Web.Controllers
                     return RedirectToAction("Slogan");
                 case 4:
                     return RedirectToAction("Riddle");
+                case 5:
+                    return RedirectToAction("Congrats", "Home");
             }
 
             return View();
@@ -155,7 +161,7 @@ namespace GenecaNewHire.Web.Controllers
         {
             if (id == 1)
             {
-                ViewBag.Error = "Almost there, keep trying!";
+                ViewBag.Error = "Wrong answer, keep trying.";
             }
 
             Session["Visited"] = Session["Visited"] + " => " + "Riddle";

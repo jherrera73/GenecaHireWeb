@@ -47,5 +47,10 @@ namespace GenecaNewHire.Web
             RegisterGlobalFilters(GlobalFilters.Filters);
             RegisterRoutes(RouteTable.Routes);
         }
+
+        protected void Application_Error(object sender, EventArgs e)
+        {
+           Response.Redirect(String.Format("~/Decision/Apology/5"));
+        }
     }
 }
