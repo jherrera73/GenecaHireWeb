@@ -163,6 +163,10 @@ namespace GenecaNewHire.Web.Controllers
             {
                 ViewBag.Error = "Wrong answer, keep trying.";
             }
+            else
+            {
+                ViewBag.Error = "";
+            }
 
             Session["Visited"] = Session["Visited"] + " => " + "Riddle";
 
