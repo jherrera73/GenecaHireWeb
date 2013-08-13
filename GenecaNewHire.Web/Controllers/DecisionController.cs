@@ -180,7 +180,7 @@ namespace GenecaNewHire.Web.Controllers
                 return RedirectToAction("Congrats", "Home");
             }
 
-            return View("Riddle", new { id = 1 });
+            return RedirectToAction("Riddle", "Decision", new { id = 1 });
         }
 
         public ActionResult Offer()
