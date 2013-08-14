@@ -20,6 +20,10 @@ namespace GenecaNewHire.Web.Controllers
                     ViewBag.Badending = "Illegal contact! 15 yard restraining order!";
                     ViewBag.Image = "../../Content/images/referee.jpg";
                     break;
+                case 3:
+                    ViewBag.Badending = "";
+                    ViewBag.Image = "../../Content/images/toobad.jpg";
+                    break;
             }
 
             return View();
@@ -105,7 +109,7 @@ namespace GenecaNewHire.Web.Controllers
                     ViewBag.Image = "../../Content/images/weird.jpg";
                     break;
                 case 4:
-                    ViewBag.Mistake = "Really, that slogan stinks!";
+                    ViewBag.Mistake = "that slogan stinks!";
                     ViewBag.Image = "../../Content/images/badslogan.jpg";
                     break;
                 case 5:
@@ -120,8 +124,13 @@ namespace GenecaNewHire.Web.Controllers
         }
 
         [HttpPost]
-        public ActionResult Apology(int id, FormCollection collection)
+        public ActionResult Apology(int id, string btnChoose, FormCollection collection)
         {
+            if (btnChoose == "No")
+            {
+                return RedirectToAction("EndAdventure", "Decision", new { id = 3 });
+            }
+
             switch (id)
             {
                 case 1:
@@ -131,7 +140,7 @@ namespace GenecaNewHire.Web.Controllers
                 case 3:
                     return RedirectToAction("Slogan");
                 case 4:
-                    return RedirectToAction("Riddle");
+                    return RedirectToAction("Riddle", "Decision", new { id = 0 });
                 case 5:
                     return RedirectToAction("Congrats", "Home");
             }
@@ -154,7 +163,7 @@ namespace GenecaNewHire.Web.Controllers
                 return RedirectToAction("Apology", "Decision", new { id = 4 });
             }
 
-            return RedirectToAction("Riddle", new { id = 0 });
+            return RedirectToAction("Riddle", "Decision", new { id = 0 });
         }
 
         public ActionResult Riddle(int id)
