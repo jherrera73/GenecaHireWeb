@@ -113,7 +113,7 @@ namespace GenecaNewHire.Web.Controllers
                     ViewBag.Image = "../../Content/images/badslogan.jpg";
                     break;
                 case 5:
-                    ViewBag.Mistake = "You didn't follow directions did you? You'll call Mike Reyes on the golf course and apologize!";
+                    ViewBag.Mistake = "You didn't follow directions did you? You'll need to call Mike Reyes on the golf course and apologize!";
                     ViewBag.Image = "../../Content/images/Mike-Reyes.jpg";
                     break;
             }
