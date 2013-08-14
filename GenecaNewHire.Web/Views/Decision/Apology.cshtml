@@ -4,11 +4,15 @@
 }
 
 <div>
-    Oh boy, @ViewBag.Mistake. <br /> Do you want to apologize?
+    Oh boy, @ViewBag.Mistake.
 </div>
 
 <div class="mistake-image">
     <img src="@ViewBag.Image" alt="mistake" />
+</div>
+
+<div>
+    <p>Do you want to apologize?</p>
 </div>
 
 @using (Html.BeginForm())

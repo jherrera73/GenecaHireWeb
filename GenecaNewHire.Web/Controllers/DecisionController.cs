@@ -184,6 +184,11 @@ namespace GenecaNewHire.Web.Controllers
 
         public ActionResult Answer(string answer)
         {
+            if (answer == null)
+            {
+                return RedirectToAction("Apology", "Decision", new { id = 5});
+            }
+
             if (answer.ToLower() == "water")
             {
                 return RedirectToAction("Congrats", "Home");
