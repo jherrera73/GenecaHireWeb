@@ -105,6 +105,7 @@
   <ItemGroup>
     <Content Include="Content\images\badslogan.jpg" />
     <Content Include="Content\images\logo.png" />
+    <Content Include="Content\images\Mike-Reyes.jpg" />
     <Content Include="Content\images\referee.jpg" />
     <Content Include="Content\images\school.jpg" />
     <Content Include="Content\images\shorts.jpg" />
