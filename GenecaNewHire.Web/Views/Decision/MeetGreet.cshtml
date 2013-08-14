@@ -9,14 +9,16 @@
 @using (Html.BeginForm())
 {
     <div>
+        @Html.DropDownList(
         @Html.DropDownList("ChooseGreeting", new List<SelectListItem>
         {
             new SelectListItem{ Text = "hug that person", Value = "0" },
             new SelectListItem{ Text = "act shy and hide behind allison", Value = "1" },
             new SelectListItem{ Text = "shake hands and say hi", Value = "2" }
-        })
+        }, new { @class="dropdownlist"})
     </div>
     <p>
         <input class="rounded" id="btnChoose" type="submit" value="Choose" />
     </p>
 }
+

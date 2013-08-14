@@ -80,6 +80,10 @@ textarea
 {
     margin:0.5em 0 0 0;
 }
+.dropdownlist {
+    height:30px;
+    font-size: 14px;
+}
 
 
 /* Styles for end adventure page
